@@ -1,0 +1,37 @@
+{
+    "name": "talk-lucky/dkms",
+    "description": "阿里云 DKMS sdk",
+    "keywords": [
+        "talk-lucky",
+        "dkms"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marvin",
+            "email": "imjcw@imjcw.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "google/protobuf": "^3.3",
+        "alibabacloud/tea": "^3.1",
+        "alibabacloud/tea-utils": "^0.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "files": [],
+        "psr-4": {
+            "Dkms\\": "src/",
+            "Dkms\\Models\\": "protobuf/Dkms/Models",
+            "GPBMetadata\\": "protobuf/GPBMetadata"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dkms\\Test\\": "tests/"
+        }
+    }
+}
